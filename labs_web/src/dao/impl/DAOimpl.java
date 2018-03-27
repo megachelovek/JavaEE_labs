@@ -9,9 +9,9 @@ import java.sql.SQLException;
 public class DAOimpl extends DAO {
 
     public static final String DEFAULT_HOST = "localhost";
-    public static final String DEFAULT_DATABASE = "coursework";
+    public static final String DEFAULT_DATABASE = "web_interfaces";
     public static final String DEFAULT_LOGIN = "postgres";
-    public static final String DEFAULT_PASSWORD = "123";
+    public static final String DEFAULT_PASSWORD = "postgres";
     public static final int DEFAULT_PORT = 5432;
 
     public DAOimpl() {

@@ -1,6 +1,11 @@
 import dao.BaseDAO;
 import dao.PostgresDAO;
 import model.Mainclass;
+
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -31,6 +36,7 @@ public class Control {
         this.processResult(rs);
         return (String[][])this.res.toArray(new String[0][0]);
     }
+
 
     private void processResult(ResultSet rs) {
         while(true) {

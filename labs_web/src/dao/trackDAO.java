@@ -11,6 +11,8 @@ public interface trackDAO {
 
     String ID_ALBUM = "id_album";
 
+    String ID_SINGER = "id_singer";
+
     void addTrack(Track track);
 
     Track getTrack(String teamName);
@@ -18,6 +20,8 @@ public interface trackDAO {
     Track getTrack(int id);
 
     void updateTrack(Track track);
+
+    void updateTrackSingerId(int id,int id2);
 
     void deleteTrack(Track track);
 

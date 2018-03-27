@@ -92,6 +92,18 @@ public class trackDAOimpl implements trackDAO{
             e.printStackTrace();
         }
     }
+    public void updateTrackSingerId(int id, int id2) {
+        String query = "UPDATE track SET id_singer=?  " +
+                "CURRENT_STANDING = ? " +
+                "WHERE id = ?";
+        try (Connection connection = dao.getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(4, id2);
+            preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     public void deleteTrack(Track track) {
